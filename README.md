@@ -1,5 +1,5 @@
 # mini-project
-# **GHAT: Guarding Hill Accidents with Technology**
+## **GHAT: Guarding Hill Accidents with Technology**
 ---
 # **Introduction**
 
@@ -15,13 +15,6 @@ oncoming vehicles, which can lead to dangerous head-on collisions. Surveys show 
 of total accidents occur in S-curves, with 13% of fatalities also happening in these regions.
 ![S CURVE](path-to-your-image)
 
-
-**Road accidents during low visibility in foggy or rainy weather conditions:** Reduced visibility
-during foggy or rainy conditions increases the risk of drivers losing track of road edges,
-leading to falls or collisions between vehicles. Inadequate detection of accidents, wildlife,
-and illegal activities further intensifies these hazards.
-
-![FOG RGION](path-to-your-image)
 
 **Presence of wildlife in ghat regions leading to accidents:** Ghat roads often pass through
 wildlife habitats, where animals such as elephants, tigers, and wild buffalo may wander
@@ -40,11 +33,6 @@ systems at sharp curves and blind spots to reduce head-on collisions, ensuring
 that drivers are notified of oncoming vehicles in critical areas.
 
 
-- **Improve road visibility**: Install high-intensity LED lights along the road edges to
-enhance driver awareness in low-visibility conditions, such as fog, rain, or mist,
-helping to reduce accidents caused by improper sightlines.
-
-
 - **Enable real-time hazard monitoring**: Utilize cameras and sensors to continuously
 monitor the road for accidents, wildlife(elephant) crossings, and illegal activities,
 providing timely alerts to drivers and authorities to prevent potential dangers.
@@ -56,6 +44,12 @@ providing timely alerts to drivers and authorities to prevent potential dangers.
 
 This project focuses on creating a real-time monitoring system for accident prevention in hilly regions using MATLAB for image processing and YOLO for object detection. The identified objects trigger signals sent to Arduino, which controls LED signals to alert drivers.
 
+### **Block Diagram**
+<div align="center">
+  <img src="https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/ESP3CAM.jpg" width="500" />
+    <br>
+    BLOCK DIAGRAM
+</div>
 ---
 
 ### **1. Camera Module**
@@ -125,7 +119,7 @@ MATLAB communicates with Arduino through a serial connection. Based on the recei
 <div align="center">
   <img src="https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/ARDUNO.png" width="500" />
     <br>
-   Arduino interfacing
+   to interface matlab with ardiuno just connect ardiuno port with pc matlab automatically detects with the help of COM port
 </div>
 
 ---
@@ -138,20 +132,14 @@ In MATLAB, the detected objects are displayed in a separate window. Frames are a
 
 The live video feed with annotations helps in debugging and visualizing the detected hazards.
 ![FRAMES](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/COW.png)
+<div align="center"> Animal Detection</div>
+
 ![FRAMES](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/BIKE.png)
+<div align="center">Vehicle detection</div>
+
 ![FRAMES](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/THAR.png)
+<div align="center">Vehicle detection</div>
 
----
-### **6. Complete System Workflow**
-
-1. **Input**: Live video feed from the webcam is processed in MATLAB.
-2. **Detection**: YOLO identifies vehicles, wildlife, and other hazards in real time.
-3. **Code Generation**: MATLAB generates specific code words for detected objects.
-4. **Arduino Communication**: The code word is sent to Arduino via serial communication.
-5. **Signal Control**: Arduino controls the traffic lights (red, green, white) or animal LED based on the code word.
-6. **Output**: Real-time signals alert drivers of potential hazards on the road.
-
----
 
 ### **7. Codes**
 
@@ -324,6 +312,8 @@ void resetOtherLEDs() {
     digitalWrite(ANIMAL_LED, LOW);
 }
 ```
+
+### 
 ### **6. Complete System Workflow**
 1. **Input**: Live video feed from the webcam is processed in MATLAB.
 2. **Detection**: YOLO identifies vehicles, wildlife, and other hazards in real time.
@@ -359,10 +349,6 @@ To run the system, ensure the following MATLAB add-ons are installed:
 - Webcam (e.g., USB Webcam or ESP32-CAM)
 - Arduino Uno
 - LEDs (Red, Green, White, and Animal-Specific)
-- IR Sensors
-- LDRs
-- 555 Timer IC
-- Power Supply (Battery or Solar Backup)
 
 ---
 
@@ -370,12 +356,10 @@ To run the system, ensure the following MATLAB add-ons are installed:
 1. Download and install MATLAB with the required add-ons.
 2. Use the provided MATLAB code to process video and generate code words.
 3. Upload the provided Arduino code to your Arduino Uno.
-4. Connect the hardware as per the circuit diagrams (to be added).
+4. Connect the hardware as per the circuit diagram (just add leds for defiend pins).
 5. Run the MATLAB script and observe the real-time hazard detection and LED signals.
 
 ---
 
-### **Next Steps**
-- Add a block diagram explaining the system workflow.
-- Provide circuit diagrams for Arduino and hardware interfacing.
+
 
