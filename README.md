@@ -1,6 +1,6 @@
 # mini-project
-## **GHAT: Guarding Hill Accidents with Technology**
----
+**GHAT: Guarding Hill Accidents with Technology**
+
 # **Introduction**
 
 In hilly and ghat regions, accidents are a frequent occurrence due to sharp curves, blind spots, and low visibility caused by adverse weather conditions like fog and heavy rain. Wildlife crossings and insufficient real-time monitoring systems further increase the risk of collisions, making these roads particularly dangerous for drivers.
@@ -9,7 +9,7 @@ This project, **GHAT: Guarding Hill Accidents with Technology**, aims to impleme
 
 
 ## **Problem Statement**
-**Road accidents at hairpin curves, S-curves, and blind spots in ghat regions:** Drivers often
+- **Road accidents at hairpin curves, S-curves, and blind spots in ghat regions:** Drivers often
 face challenges while navigating sharp turns and blind spots, making it difficult to detect
 oncoming vehicles, which can lead to dangerous head-on collisions. Surveys show that 10%
 of total accidents occur in S-curves, with 13% of fatalities also happening in these regions.
@@ -19,7 +19,7 @@ of total accidents occur in S-curves, with 13% of fatalities also happening in t
   <b>ghat road</b>
 </div>
 
-**Presence of wildlife in ghat regions leading to accidents:** Ghat roads often pass through
+- **Presence of wildlife in ghat regions leading to accidents:** Ghat roads often pass through
 wildlife habitats, where animals such as elephants, tigers, and wild buffalo may wander
 onto the road. The sudden appearance of wildlife can cause serious accidents if not
 detected early.
@@ -28,6 +28,7 @@ detected early.
   <br>
   <b>elephant blocking the road</b>
 </div>
+
 ---
 
 ## **Objective**
@@ -43,20 +44,23 @@ that drivers are notified of oncoming vehicles in critical areas.
 monitor the road for accidents, wildlife(elephant) crossings, and illegal activities,
 providing timely alerts to drivers and authorities to prevent potential dangers.
 
----
+
 
 
 ## **Methodology**
 
 This project focuses on creating a real-time monitoring system for accident prevention in hilly regions using MATLAB for image processing and YOLO for object detection. The identified objects trigger signals sent to Arduino, which controls LED signals to alert drivers.
+<br>
 
-### **Block Diagram**
 <div align="center">
-  <img src="https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/ESP3CAM.jpg" width="500" />
+  
+### **Block Diagram**
+
+  <img src="https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/BLOCKGAHTLIGHT.drawio.png" width="800" />
     <br>
     BLOCK DIAGRAM
 </div>
----
+
 
 ### **1. Camera Module**
 
@@ -85,7 +89,7 @@ We utilize **YOLOv4**, a pretrained object detection model, for identifying vehi
     YOLO MODEL
 </div>
 
-Steps:
+
 1. **Object Detection**: YOLO identifies objects in the video frames.
 2. **Filtering**: Detected objects are filtered into categories like cars, animals, etc.
 3. **Annotation**: Bounding boxes and labels are added to the objects, which are displayed in MATLAB.
@@ -94,7 +98,9 @@ Steps:
     <br>
     analysing the live frame
 </div>
+
 ---
+
 
 ### **3. Generating Coded Signals**
 
@@ -110,7 +116,7 @@ These code words are sent to the Arduino via **serial communication**.
 ---
 
 ### **4. Arduino Interfacing**
-
+  *to interface matlab with ardiuno just connect ardiuno port with pc matlab automatically detects with the help of COM port*
 MATLAB communicates with Arduino through a serial connection. Based on the received code word, Arduino performs the following actions:
 - Turns on the **red LED** for vehicles.
 - Turns on the **animal-specific LED** for wildlife.
@@ -125,7 +131,7 @@ MATLAB communicates with Arduino through a serial connection. Based on the recei
 <div align="center">
   <img src="https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/ARDUNO.png" width="500" />
     <br>
-   to interface matlab with ardiuno just connect ardiuno port with pc matlab automatically detects with the help of COM port
+  ardiuno interfacing
 </div>
 
 ---
