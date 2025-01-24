@@ -64,7 +64,12 @@ We are using a **webcam** as the camera module. The webcam captures live video s
 
 - The resolution of the webcam is set to `1280x720` for better accuracy.
 - MATLAB captures frames from the webcam for further processing.
-![ESP 32 CAM](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/ESP3CAM.jpg)
+
+<div align="center">
+  <img src="https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/ESP3CAM.jpg" width="500" />
+    <br>
+    camera module 
+</div>
 
 ---
 
@@ -74,14 +79,21 @@ We utilize **YOLOv4**, a pretrained object detection model, for identifying vehi
 
 - Vehicles: Cars, bikes, buses, and trucks.
 - Wildlife: Animals such as elephants, deer, and dogs.
-![YOLO](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/YOLO.jpg)
+<div align="center">
+  <img src="https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/YOLO.jpeg" width="500" />
+    <br>
+    YOLO MODEL
+</div>
 
 Steps:
 1. **Object Detection**: YOLO identifies objects in the video frames.
 2. **Filtering**: Detected objects are filtered into categories like cars, animals, etc.
 3. **Annotation**: Bounding boxes and labels are added to the objects, which are displayed in MATLAB.
-![A CAR PHOTO](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/PORSHE.jpg)
-
+<div align="center">
+  <img src="https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/PORSHE.png" width="500" />
+    <br>
+    analysing the live frame
+</div>
 ---
 
 ### **3. Generating Coded Signals**
@@ -110,7 +122,11 @@ MATLAB communicates with Arduino through a serial connection. Based on the recei
 - **Code `3` (Truck/Bus)**: Red LED is turned on for 5 seconds.
 - **Code `4` (Animal)**: Animal-specific LED is turned on for 7 seconds.
 - **Code `0`**: Green LED is kept on, signaling a clear path.
-![SIGNAL POLE](path-to-your-image)
+<div align="center">
+  <img src="https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/ARDUNO.png" width="500" />
+    <br>
+   Arduino interfacing
+</div>
 
 ---
 
@@ -121,9 +137,9 @@ In MATLAB, the detected objects are displayed in a separate window. Frames are a
 - Labels indicating the type of object (e.g., "Car," "Animal").
 
 The live video feed with annotations helps in debugging and visualizing the detected hazards.
-![FRAMES](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/COW.jpg)
-![FRAMES](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/BIKE.jpg)
-![FRAMES](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/THAR.jpg)
+![FRAMES](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/COW.png)
+![FRAMES](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/BIKE.png)
+![FRAMES](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/THAR.png)
 
 ---
 ### **6. Complete System Workflow**
