@@ -64,7 +64,7 @@ We are using a **webcam** as the camera module. The webcam captures live video s
 
 - The resolution of the webcam is set to `1280x720` for better accuracy.
 - MATLAB captures frames from the webcam for further processing.
-![ESP 32 CAM](path-to-your-image)
+![ESP 32 CAM](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/ESP3CAM.jpg)
 
 ---
 
@@ -74,13 +74,13 @@ We utilize **YOLOv4**, a pretrained object detection model, for identifying vehi
 
 - Vehicles: Cars, bikes, buses, and trucks.
 - Wildlife: Animals such as elephants, deer, and dogs.
-![YOLO](path-to-your-image)
+![YOLO](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/YOLO.jpg)
 
 Steps:
 1. **Object Detection**: YOLO identifies objects in the video frames.
 2. **Filtering**: Detected objects are filtered into categories like cars, animals, etc.
 3. **Annotation**: Bounding boxes and labels are added to the objects, which are displayed in MATLAB.
-![ACAR PHOTO](path-to-your-image)
+![A CAR PHOTO](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/PORSHE.jpg)
 
 ---
 
@@ -121,7 +121,9 @@ In MATLAB, the detected objects are displayed in a separate window. Frames are a
 - Labels indicating the type of object (e.g., "Car," "Animal").
 
 The live video feed with annotations helps in debugging and visualizing the detected hazards.
-![FRAMES](path-to-your-image)
+![FRAMES](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/COW.jpg)
+![FRAMES](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/BIKE.jpg)
+![FRAMES](https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/THAR.jpg)
 
 ---
 ### **6. Complete System Workflow**
