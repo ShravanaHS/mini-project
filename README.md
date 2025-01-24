@@ -14,22 +14,20 @@ face challenges while navigating sharp turns and blind spots, making it difficul
 oncoming vehicles, which can lead to dangerous head-on collisions. Surveys show that 10%
 of total accidents occur in S-curves, with 13% of fatalities also happening in these regions.
 <div align="center">
-  <img src="[https://github.com/ShravanaHS/mini-project/blob/main/files/REPOPICS/ESP3CAM.jpg](https://th.bing.com/th/id/R.2ad18f66637e462b7838da6ee0d42d74?rik=ir5pkhCF01ilLw&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f2%2f26%2fValparai_GhatRoad.JPG&ehk=RnaJXMRj1%2fscpJygQObsZbzQv%2fAn%2bCzEuysBIkY8NoA%3d&risl=&pid=ImgRaw&r=0)" width="500" />
-    <br>
-   GHAT road
+  <img src="https://www.nativeplanet.com/img/1200x60x675/2017/03/pic4-23-1490257262.jpg" width="500" />
+  <br>
+  <b>ghat road</b>
 </div>
-
 
 **Presence of wildlife in ghat regions leading to accidents:** Ghat roads often pass through
 wildlife habitats, where animals such as elephants, tigers, and wild buffalo may wander
 onto the road. The sudden appearance of wildlife can cause serious accidents if not
-detected early..
+detected early.
 <div align="center">
-  <img src="(https://th.bing.com/th/id/OIP.MdOnju4NwJUtdd6X0l2mXQAAAA?rs=1&pid=ImgDetMain)" width="500" />
-    <br>
-    BLOCK DIAGRAM
+  <img src="https://media.sciencephoto.com/image/c0520212/800wm/C0520212-Female_elephant_blocking_the_road.jpg" width="500" />
+  <br>
+  <b>elephant blocking the road</b>
 </div>
-
 ---
 
 ## **Objective**
