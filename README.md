@@ -373,5 +373,16 @@ To run the system, ensure the following MATLAB add-ons are installed:
 
 ---
 
+###  **Contributors**
+
+These legends helped build this PLL project:
+
+| Name              | Role / Contribution                 | Email                     |
+|-------------------|--------------------------------------|---------------------------|
+| Nandeesh K S      | field and technical research         | nandeeshnandi107@gmail.com      |
+| Priya R Dharani   | Technical support                    | 1dt22ec071@dsatm.edu.in  |
+| Sneha S patil     | Technical support                    | 1dt22ec095@dsatm.edu.in|
+|Prof. Dr. R V Manjunath |  Guide                          | manju.aps@gamil.com  |
+| Shravana H S      | Technical support                   | shravanahs97@gmail.com |
 
 
